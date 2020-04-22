@@ -26,7 +26,7 @@
                     position: absolute;
                     text-align: center;
                     max-width: 70px;
-                    max-height: 60px;
+                    max-height: 30px;
                     padding: 8px;
                     border: none;
                     border-radius: 8px;
@@ -85,8 +85,8 @@
                 <div id="tooplate_menu">
                     
                  <ul>
-                     <li><a href="#">Deficit Budgetaire</a></li>
-					 <li><a href="deficit_annee.html">Par Annee</a></li>
+                     <li><a href="deficit_heatmap.html">Via Heatmap</a></li>
+					 <li><a href="deficit_annee.html">Via Annee</a></li>
 
                        
                  </ul>    	
@@ -164,7 +164,7 @@
         
                 //construction du heatmap
                 //extraction des donnees a partir du fichier: donnee.tsv
-                d3.tsv("deficit/deficits.tsv",
+                d3.tsv("deficit/deficit.tsv",
                     function (d) {
                         return {
                             region: +d.region,
